@@ -37,3 +37,92 @@ nav a{
     width: 100%;
     overflow: hidden;
 }
+
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap:30px;
+    padding: 50px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card > div {
+    flex: 1 1 300px;
+    max-width: 350px;
+    background: white;
+    border: 1px solid #eee;
+    padding:15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;         /* Fixed height to keep them uniform */
+    object-fit: cover;     /* Crops the image to fit the height perfectly */
+    display: block;
+    margin-bottom: 15px;
+}
+
+.category{
+    display: inline-flex;
+    background: red;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    font-size: small;
+}
+
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    font-family:'Times New Roman', Times, serif;
+    color: grey;
+   
+}
+.date
+{
+    color: red
+}
+.pagination {
+    display: flex;
+    justify-content: center; /* This moves it to the center of the screen */
+    align-items: center;
+    gap: 10px;               /* Adds space between the boxes */
+    margin: 50px 0;   
+           /* Adds space above and below the pagination */
+}
+.page-num, .next {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    background-color: #f5f5f5; /* Light grey background */
+    color: #ff4d6d;            /* Pink text color */
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+/* Style for the 'Next' button (wider than the numbers) */
+.next {
+    width: auto;
+    padding: 0 20px;
+}
+
+/* Style for the active/selected page (Red box with white text) */
+.page-num.active {
+    background-color: #ff3356; /* Bright red/pink */
+    color: white;
+}
+
+/* Dots styling */
+.dots {
+    color: #ff4d6d;
+    padding: 0 5px;
+}
